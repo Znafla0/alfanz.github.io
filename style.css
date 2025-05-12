@@ -1,56 +1,171 @@
-body {
-    font-family: Arial, sans-serif;
+/* Global Reset */
+* {
     margin: 0;
-    background: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background: #222;
+    background-color: #ff5722;
     color: white;
-    padding: 1rem;
+    padding: 20px 0;
     text-align: center;
 }
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+header .logo h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
 }
 
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
-.games {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.game-card {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.game-card a {
-    display: inline-block;
+header nav ul {
+    list-style-type: none;
+    padding: 0;
     margin-top: 10px;
-    padding: 10px;
-    background: #007bff;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
     color: white;
-    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section .cta-btn {
+    background-color: #ffffff;
+    color: #ff5722;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hero-section .cta-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Game List */
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.game-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.game-item img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Pricing Section */
+.pricing-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pricing-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.pricing-item h3 {
+    font-size: 1.8rem;
+    color: #ff5722;
+}
+
+.pricing-item p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+button.order-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button.order-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #eeeeee;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff5722;
     text-decoration: none;
 }
 
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+footer p {
+    font-size: 0.9rem;
 }
+
