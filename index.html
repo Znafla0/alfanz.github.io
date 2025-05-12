@@ -3,103 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alfanz - Layanan Top Up Game Terpercaya dan Cepat">
+    <meta name="description" content="Alfanz - Top Up Game Cepat dan Aman">
+    <meta name="author" content="Alfanz">
     <title>Alfanz - Top Up Game Cepat dan Aman</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="logo">
-            <h1>Alfanz</h1>
-            <p>Top Up Game Cepat dan Aman</p>
-        </div>
         <nav>
-            <ul>
+            <div class="logo">
+                <h1>Alfanz</h1>
+                <p>Top Up Game Cepat dan Aman</p>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#games">Game</a></li>
-                <li><a href="#pricing">Paket Top Up</a></li>
+                <li><a href="#packages">Paket Top Up</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section (Banner) -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero">
         <h2>Selamat Datang di Alfanz!</h2>
         <p>Top Up Game dengan Proses Cepat dan Aman!</p>
-        <button class="cta-btn">Top Up Sekarang</button>
+        <a href="#packages" class="btn">Top Up Sekarang</a>
     </section>
 
-    <!-- Daftar Game -->
-    <section id="games" class="section">
+    <section id="games" class="games">
         <h2>Game yang Kami Dukung</h2>
         <div class="game-list">
             <div class="game-item">
-                <img src="images/mlbb-logo.png" alt="Mobile Legends">
+                <img src="images/ml.png" alt="Mobile Legends">
                 <p>Mobile Legends</p>
             </div>
             <div class="game-item">
-                <img src="images/ff-logo.png" alt="Free Fire">
+                <img src="images/ff.png" alt="Free Fire">
                 <p>Free Fire</p>
             </div>
             <div class="game-item">
-                <img src="images/pubg-logo.png" alt="PUBG">
+                <img src="images/pubg.png" alt="PUBG">
                 <p>PUBG</p>
             </div>
             <div class="game-item">
-                <img src="images/codm-logo.png" alt="Call of Duty Mobile">
+                <img src="images/codm.png" alt="Call of Duty Mobile">
                 <p>Call of Duty Mobile</p>
             </div>
         </div>
     </section>
 
-    <!-- Paket Top Up -->
-    <section id="pricing" class="section">
+    <section id="packages" class="packages">
         <h2>Paket Top Up</h2>
-        <div class="pricing-list">
-            <div class="pricing-item">
-                <h3>Mobile Legends</h3>
-                <p>Harga: Rp50.000</p>
-                <button class="order-btn" data-game="Mobile Legends">Top Up Sekarang</button>
-            </div>
-            <div class="pricing-item">
-                <h3>Free Fire</h3>
-                <p>Harga: Rp30.000</p>
-                <button class="order-btn" data-game="Free Fire">Top Up Sekarang</button>
-            </div>
-            <div class="pricing-item">
-                <h3>PUBG</h3>
-                <p>Harga: Rp40.000</p>
-                <button class="order-btn" data-game="PUBG">Top Up Sekarang</button>
-            </div>
-            <div class="pricing-item">
-                <h3>Call of Duty</h3>
-                <p>Harga: Rp60.000</p>
-                <button class="order-btn" data-game="Call of Duty">Top Up Sekarang</button>
-            </div>
+        <div class="package-item">
+            <h3>Mobile Legends</h3>
+            <p>Harga: Rp50.000</p>
+            <a href="#" class="btn">Top Up Sekarang</a>
+        </div>
+        <div class="package-item">
+            <h3>Free Fire</h3>
+            <p>Harga: Rp30.000</p>
+            <a href="#" class="btn">Top Up Sekarang</a>
+        </div>
+        <div class="package-item">
+            <h3>PUBG</h3>
+            <p>Harga: Rp40.000</p>
+            <a href="#" class="btn">Top Up Sekarang</a>
+        </div>
+        <div class="package-item">
+            <h3>Call of Duty</h3>
+            <p>Harga: Rp60.000</p>
+            <a href="#" class="btn">Top Up Sekarang</a>
         </div>
     </section>
 
-    <!-- Testimonials (Optional) -->
-    <section class="testimonials section">
+    <section id="testimonials" class="testimonials">
         <h2>Apa Kata Mereka?</h2>
         <div class="testimonial-item">
-            <p>"Alfanz sangat cepat dan terpercaya! Proses top up hanya butuh beberapa menit!" - <strong>John Doe</strong></p>
+            <p>"Alfanz sangat cepat dan terpercaya! Proses top up hanya butuh beberapa menit!"</p>
+            <p>- John Doe</p>
         </div>
         <div class="testimonial-item">
-            <p>"Top up saya langsung masuk, benar-benar recommended!" - <strong>Jane Smith</strong></p>
+            <p>"Top up saya langsung masuk, benar-benar recommended!"</p>
+            <p>- Jane Smith</p>
         </div>
     </section>
 
-    <!-- Footer & Kontak -->
-    <footer id="contact">
-        <div class="contact-info">
-            <h3>Kontak Kami</h3>
-            <p>Hubungi kami lewat <a href="https://wa.me/yourwhatsappnumber" target="_blank">WhatsApp</a> atau email di <a href="mailto:contact@alfanz.com">contact@alfanz.com</a></p>
-        </div>
+    <section id="contact" class="contact">
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami lewat WhatsApp atau email di <a href="mailto:contact@alfanz.com">contact@alfanz.com</a></p>
+    </section>
+
+    <footer>
         <p>&copy; 2025 Alfanz. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
+
