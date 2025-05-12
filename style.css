@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,166 +5,130 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header */
 header {
-    background-color: #ff5722;
+    background-color: #333;
     color: white;
     padding: 20px 0;
-    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 header .logo h1 {
-    font-size: 3rem;
-    margin-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 0;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
+header .logo p {
+    font-size: 1em;
+    margin-top: 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 20px;
+header .nav-links {
+    list-style: none;
+    display: flex;
 }
 
-header nav ul li a {
+header .nav-links li {
+    margin-left: 20px;
+}
+
+header .nav-links a {
+    color: white;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1em;
 }
 
-/* Hero Section */
-.hero-section {
-    background-color: #ff5722;
-    color: white;
+.hero {
     text-align: center;
+    background-color: #4CAF50;
+    color: white;
     padding: 50px 20px;
 }
 
-.hero-section h2 {
-    font-size: 2.5rem;
+.hero h2 {
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
-.hero-section .cta-btn {
-    background-color: #ffffff;
-    color: #ff5722;
-    padding: 15px 30px;
-    border: none;
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
     border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
 }
 
-.hero-section .cta-btn:hover {
-    background-color: #e64a19;
+.hero .btn:hover {
+    background-color: #555;
 }
 
-/* Game List */
-.game-list {
+.games, .packages, .testimonials, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.games .game-list {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    gap: 20px;
 }
 
-.game-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 200px;
-}
-
-.game-item img {
+.games .game-item img {
     width: 100px;
-    margin-bottom: 10px;
+    height: 100px;
 }
 
-/* Pricing Section */
-.pricing-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.pricing-item {
-    background-color: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 250px;
+.packages .package-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
     text-align: center;
-}
-
-.pricing-item h3 {
-    font-size: 1.8rem;
-    color: #ff5722;
-}
-
-.pricing-item p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-button.order-btn {
-    background-color: #ff5722;
-    color: white;
-    padding: 12px 25px;
-    border: none;
     border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-button.order-btn:hover {
-    background-color: #e64a19;
-}
-
-/* Testimonials Section */
-.testimonials {
-    background-color: #eeeeee;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.testimonial-item {
-    background-color: white;
-    padding: 20px;
-    margin: 10px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 500px;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
+.packages .btn {
+    background-color: #4CAF50;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
 }
 
-footer a {
-    color: #ff5722;
-    text-decoration: none;
+.packages .btn:hover {
+    background-color: #333;
+}
+
+.testimonials .testimonial-item {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
 footer p {
-    font-size: 0.9rem;
+    font-size: 1em;
 }
-
